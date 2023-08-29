@@ -1,0 +1,452 @@
+{"intents": [
+  {"tag": "greeting",
+   "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+   "responses": ["Hello", "Hi", "Hi there"]
+  },
+  {"tag": "goodbye",
+   "patterns": ["Bye", "See you later", "Goodbye"],
+   "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+  },
+  {"tag": "thanks",
+   "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+   "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+  },
+  {"tag": "about MOTA scholarship",
+   "patterns": ["What are the scholarships schemes available?","tell me something about scholarships","tell me something about MOTA scholarships","tell me something about mota scholarships schemes","can you tell me about different scholarship available","What are the different types of scholarships available?","What scholarship opportunities are there for students?","Are there any scholarship programs for college students?","Can you provide information about scholarships?","What are some sources of scholarships?","What scholarships are available for international students?","What scholarships are available for minority students?","Are there any scholarships for students with disabilities?","What scholarships are available for high school students?","list of different scholarship available"],
+   "responses": ["Ministry of Tribal Affairs is implementing following Scholarship Schemes for ST students in the country\n 1. PreMatric\n 2. Post Matric\n 3. National Scholarship\n 4. National Fellowship\n 5. National Overseas\n 6. DBT", "Scholarship Division of this Ministry provides financial assistance to States Individual beneficiaries Institutes as per schematic norms.\n Under these scholarship schemes, around 30 lakh ST students are being covered for financial assistance through DBT mode.\n Ministry of Tribal Affairs is implementing following Scholarship Schemes for ST students in the country.\n Different scholarships are \n 1. PreMatric\n 2. Post Matric\n 3. National Scholarship\n 4. National Fellowship\n 5. National Overseas\n 6. DBT"]
+  },
+  {"tag": "pre matric scheme",
+  "patterns": ["what is pre matric scholarship scheme", "tell me something about pre matric scheme", "how is pre matric scheme","pre matric scholarship scheme"],
+  "responses": ["This is a Centrally Sponsored Scheme implemented through StatesUTs who are responsible for Inviting applications from students online through State Portal or National Scholarship Portal,\n check eligibility verification and disbursement of scholarship to eligible ST students directly to their bank accounts through DBT.\n Funds are released by this Ministry to the State GovernmentsUTs based on their proposal comprising of Statement of Expenditure,\n Furnishing of Utilization Certificate and Uploading of beneficiary data on DBT Portal."]
+  },
+  {"tag":"pre matric eligibility",
+  "patterns":["What is eligibility for pre matric scholarship?","tell me the eligibility criteria for pre matric scholarship","Who is eligible for prematric scholarships?","What is the age limit for prematric scholarships?","Are there any academic requirements for prematric scholarships?","Is there any income limit for prematric scholarship eligibility?","Are prematric scholarships available for students belonging to minority communities?","how can I avail the pre matric scholarship","how can I get the pre matric scholarship","to get the pre matric scholarship what i have to do","eligibility for prematric scholarship"],
+  "responses":["1. Applicable to students who are studying in Classes IX to X. \n 2. Parental income from all sources should not exceed Rs.2.50 lakhs per annum."]
+  },
+  {"tag":"pre matric payment",
+  "patterns":["What is the pre matric scholarship amount for this academic year?","what is the amount of pre matric scholarship scheme","what is the amount of pre matric scholarship","what is the payable amount for pre matric scholarship","tell me the payable aamount for pre matric scholarship","how much amount is payable for pre matric scholarship","how much amount is paid in pre matric scholarship","pre matric scholarship payment","What is the maximum pre matric scholarship amount that a student can receive","Is the pre matric scholarship amount paid in installments or in a lump sum?"],
+  "responses":["Scholarships are paid  Rs.225 per month for Day Scholars and  Rs.525 per month for Hostellers, for a period of 10 months in a year."]
+  },
+  {"tag":"pre matric selection",
+    "patterns":["tell me the selection process for pre matric scholarship","tell me the selection process for pre matric scholarship scheme","what is the selection process for pre matric scholarship scheme","can you tell me the selection process for pre matric scholarship","can you tell me the selection process for pre matric scholarship scheme","what is the selection procedure of pre matric scholarship","what is the selection procedure for pre matric scheme","selection of pre matric scholarship","how students are selected for pre matric scholarship scheme","tell me the selection process of pre matric","how can I avail the pre matric scholarship","how can I get the pre matric scholarship","to get the pre matric scholarship what i have to do"],
+    "responses":["All eligible students will get the stipend.For details check eligibility for pre matric scholarship"]
+  },
+  {"tag":"pre matric application",
+    "patterns":["how can I apply for pre matric scholarship","how can I apply for pre matric scholarship scheme","what is the application process for pre matric scholarship scheme","how to apply for for pre matric scheme","how to apply for pre matric scholarship scheme"],
+    "responses":["Applications are invited through respective State or National scholarship portal (https:scholarships.gov.in)"]
+  },
+  {"tag": "pre matric benefits",
+  "patterns": ["what is pre matric scholarship benefits", "tell me something about pre matric scholarship benefits","pre matric scholarship benefits","what are the benefits of pre matric scholarships"],
+  "responses": ["The main benefits of the scheme are as under:\n 1. Applicable to students who are studying in Classes IX  X.\n 2. Parental income from all sources should not exceed Rs.2.50 lakhs per annum.\n 3. Scholarships are paid  Rs.225 per month for Day Scholars and  Rs.525 per month for Hostellers, for a period of 10 months in a year.\n 4. Funds shared at the ratio of 75:25 between the Centre and State GovernmentsUT and in ratio of 90:10 for NE and Specially Category StatesUTs (UT of Jammu & Kashmir, Himachal Pradesh and Uttarakhand). For UT without legislature 100% grant is given by Centre."]
+  },
+  {"tag": "pre matric guidlines",
+  "patterns": ["what are the pre matric scholarship guidlines", "what are the pre matric guidlines","tell me something about pre matric scholarship guidelines","pre matric scholarship guidelines"],
+  "responses": ["follow the below links \n1. https:tribal.nic.indownloadsguidelinesprematricguidelinesPrematric17Oct2022.pdf 2.\n https:tribal.nic.indownloadsguidelinesprematricEDUProformaAnnex.pdf 3.\n https:tribal.nic.indownloadsguidelinesprematricIncreaseincholarshipamtunderPrenPMS20Dec2019.pdf 4.\n https:tribal.nic.indownloadsguidelinesprematricupward%20revision%20of%20annual%20parantal%20income%20PreMatric.pdf"]
+  },
+  {"tag": "pre matric circular",
+  "patterns": ["what are the pre matric scholarship circulars", "what are the pre matric circular","tell me something about pre matric scholarship circular","pre matric scholarship circular","what are recent circulars about pre matric scholarship ","what are the new cisrcular published about pre matric scholarship scheme","tell me about recent circulars about pre matric scholarship ","tell me about new cisrcular published about pre matric scholarship scheme"],
+  "responses": ["follow the below links \n1. https:tribal.nic.indownloadscircularsOM%20Aadhaar%20for%20disbursement%20of%20benefits_0001.pdf \n2. https:tribal.nic.indownloadscircularsAadhar%20Notification%20for%208%20schemes%209.6.pdf \n 3. https:tribal.nic.indownloadscircularsCircular%20for%20Aadhar%20enrollment%2004102017.pdf"]
+  },
+  {"tag": "pre matric amount",
+  "patterns": ["what is the total amount released in pre matric scholarship scheme?","what is the total amount given in pre matric scholarship","what is the total amount given in pre matric","tell me the total amount released in pre matric scholarship scheme"],
+  "responses": ["Amount released in pre matric scholarship scheme is 318.73 Crore"]
+  },
+  {"tag": "pre matric beneficiaries",
+  "patterns": ["what is the total number of beneficiaries in pre matric scholarship scheme?","how many students are in pre matric scholarship scheme?","what is the total number of beneficiaries in pre matric scholarship","what is the total number of beneficiaries  in pre matric","tell me the total number of beneficiaries in pre matric scholarship scheme","how many students get benifited in pre matric scheme"],
+  "responses": ["Total number of beneficiaries is 1157227"]
+  },
+  {"tag": "pre matric states",
+  "patterns": ["how many states received pre matric scholarship scheme?","what is the total number of states in pre matric scholarship","what is the total number of states in pre matric","tell me the total number of states in pre matric scholarship scheme"],
+  "responses": ["Number of states received grant is 12"]
+  },
+
+
+
+
+
+
+
+
+  {"tag": "post matric scheme",
+    "patterns": ["what is post matric scholarship scheme", "tell me something about post matric scheme", "how is post matric scheme","post matric scholarship scheme"],
+    "responses": ["This is a Centrally Sponsored Scheme implemented through StatesUTs who are responsible for Inviting applications from students online through State Portal or National Scholarship Portal, check eligibility verification and disbursement of scholarship to eligible ST students directly to their bank accounts through DBT. Funds are released by this Ministry to the State GovernmentsUTs based on their proposal comprising of Statement of Expenditure, Furnishing of Utilization Certificate and Uploading of beneficiary data on DBT Portal."]
+  },
+  {"tag":"post matric eligibility",
+"patterns":["What is eligibility for post matric scholarship?","tell me the eligibility criteria for post matric scholarship","Who is eligible for post matric scholarships?","What is the age limit for post matric scholarships?","Are there any academic requirements for post matric scholarships?","Is there any income limit for post matric scholarship eligibility?"],
+"responses":["1. Applicable to students who are pursuing any recognized course from a recognized institution for which qualification is MatriculationClass X or above. \n 2. Parental income from all sources should not exceed Rs.2.50 lakhs per annum."]
+},
+
+{"tag":"post matric selection",
+"patterns":["tell me the selection process for post matric scholarship","tell me the selection process for post matric scholarship scheme","what is the selection process for post matric scholarship scheme","can you tell me the selection process for post matric scholarship","can you tell me the selection process for post matric scholarship scheme","what is the selection procedure of post matric scholarship","what is the selecction procedure for post matric scheme","selection of post matric scholarship","how students are selected for post matric scholarship scheme","tell me the selection process of post matric","how can I avail the post matric scholarship","how can I get the post matric scholarship","to get the post matric scholarship what i have to do"],
+"responses":["All eligible students will get the stipend.For details check eligibility for post matric scholarship"]
+},
+{"tag":"post matric application",
+"patterns":["how can I apply for post matric scholarship","how can I apply for post matric scholarship scheme","what is the application process for post matric scholarship scheme","how to apply for for post matric scheme","how to apply for post matric scholarship scheme"],
+"responses":["Applications are invited through respective State or National scholarship portal (https:scholarships.gov.in)"]
+},
+{"tag":"post matric payment",
+"patterns":["What is the post matric scholarship amount for this academic year?","how much amount is paid in post matric scholarship","what is the amount of post matric scholarship scheme","what is the amount of post matric scholarship","what is the payable amount for post matric scholarship","tell me the payable aamount for post matric scholarship","how much amount is payable for post matric scholarship","post matric scholarship payment","What is the maximum post matric scholarship amount that a student can receive","Is the post matric scholarship amount paid in installments or in a lump sum?"],
+"responses":["Scholarship has 2 components. First is payment of compulsory fees charged by educational institutions subject to the limit fixed by the concerned State. Second is payment of Maintenance amount varying from Rs .230 to Rs.1200 per month, depending upon the course of study pursued by the student."]
+},
+  {"tag": "post matric benefits",
+  "patterns": ["what is post matric scholarship benefits","what are the benefits of post matric scholarships", "tell me something about post matric scholarship benefits","post matric scholarship benefits"],
+  "responses": ["The main benefits of the scheme are as under: 1. Applicable to students who are pursuing any recognized course from a recognized institution for which qualification is MatriculationClass X or above.. 2. Parental income from all sources should not exceed Rs.2.50 lakhs per annum. 3.Scholarship has 2 components. First is payment of compulsory fees charged by educational institutions subject to the limit fixed by the concerned State. Second is payment of Maintenance amount varying from Rs .230 to Rs.1200 per month, depending upon the course of study pursued by the student. 4. Funds shared at the ratio of 75:25 between the Centre and State GovernmentsUT and in ratio of 90:10 for NE and Specially Category StatesUTs (UT of Jammu & Kashmir, Himachal Pradesh and Uttarakhand). For UT without legislature 100% grant is given by Centre."]
+  },
+  {"tag": "post matric guidlines",
+  "patterns": ["what are the post matric scholarship guidlines", "what are the post matric guidlines","tell me something about post matric scholarship guidelines","post matric scholarship guidelines"],
+  "responses": ["follow the below links 1. https:tribal.nic.indownloadsguidelinespostmatricPostmatricguidelines15032023.pdf 2. https:tribal.nic.indownloadsguidelinespostmatricEDUPostMatricScholarshipPMSforSTstudents230513.pdf"]
+  },
+  {"tag": "post matric circular",
+  "patterns": ["what are the post matric scholarship circulars", "what are the post matric circular","tell me something about post matric scholarship circular","post matric scholarship circular","what are recent circulars about post matric scholarship ","what are the new cisrcular published about post matric scholarship scheme","tell me about recent circulars about post matric scholarship ","tell me about new cisrcular published about post matric scholarship scheme"],
+  "responses": ["follow the below links 1. https:tribal.nic.indownloadscircularsAadhar%20Notification%20for%208%20schemes%209.6.pdf 2. https:tribal.nic.indownloadscircularsCircular%20for%20Aadhar%20enrollment%2004102017.pdf"]
+  },
+  {"tag": "post matric amount",
+  "patterns": ["what is the total amount released in post matric scholarship scheme?","what is the total amount given in post matric scholarship","what is the total amount given in post matric","tell me the total amount released in post matric scholarship scheme"],
+  "responses": ["Amount released in post matric scholarship scheme is 1939.19 Crore"]
+  },
+  {"tag": "post matric beneficiaries",
+  "patterns": ["what is the total number of beneficiaries in post matric scholarship scheme?","how many students are in post matric scholarship scheme?","what is the total number of beneficiaries in post matric scholarship","what is the total number of beneficiaries in post matric","tell me the total number of beneficiaries in post matric scholarship scheme","how many students get benifited in post matric scheme"],
+  "responses": ["Total number of beneficiaries is 2336178"]
+  },
+  {"tag": "post matric states",
+  "patterns": ["how many states received post matric scholarship scheme?","what is the total number of states in post matric scholarship","what is the total number of states in post matric","tell me the total number of states in post matric scholarship scheme"],
+  "responses": ["Number of states received grant is 20"]
+  },
+  {"tag": "national scholarship scheme",
+    "patterns": ["what is national scholarship scheme", "tell me something about national scholarship scheme", "how is national scholarship scheme","national scholarship"],
+    "responses": ["This is a Central Sector Scheme fully funded and implemented by Central Govt. Scholarship is given to ST students for pursuing higher studies in prescribed courses in any of the 246 Premier Institutes of Country like IITs, AIIMS, IIMs, NIITs, etc. identified by the Ministry. Preference is given to girls, Divyang and PVTGs."]
+  },
+  {"tag":"national scholarship eligibility",
+  "patterns":["What is eligibility for national scholarship?","tell me the eligibility criteria for national scholarship","Who is eligible for national scholarships?","What is the age limit for national scholarships?","Are there any academic requirements for national scholarships?","Is there any income limit for national scholarship eligibility?"],
+  "responses":["1. Scholarship is given to 1000 fresh students every year, selected on merit based on marks of class XII. \n 2. Family income from all sources should not exceed Rs.6.00 lakhs per annum."]
+  },
+  {"tag":"national scholarship selection",
+"patterns":["tell me the selection process for national scholarship","tell me the selection process for national scholarship scheme","what is the selection process for national scholarship scheme","can you tell me the selection process for national scholarship","can you tell me the selection process for national scholarship scheme","what is the selection procedure of national scholarship","what is the selecction procedure for national scholarship scheme","selection of national scholarship","how students are selected for national scholarship scheme","tell me the selection process of national scholarship","how can I avail the national scholarship","how can I get the national scholarship","to get the national scholarship what i have to do"],
+"responses":["Scholarship is given to 1000 fresh students (from premier institute only like IITs, AIIMS, IIMs, NIITs, etc.) every year, selected on merit based on marks of class XII. \n For more detail check eligibility for post matric scholarship.\n Note: Preference is given to girls, Divyang and PVTGs."]
+},
+{"tag":"national scholarship application",
+"patterns":["how can I apply for national scholarship","how can I apply for national scholarship scheme","what is the application process for national scholarship scheme","how to apply for for national scholarship scheme","how to apply for national scholarship scheme"],
+"responses":["Applications are invited through national scholarship portal only https:scholarships.gov.in"]
+},
+  {"tag":"national scholarship payment",
+"patterns":["What is the national scholarship amount for this academic year?","how much amount is paid in national scholarship","what is the amount of national scholarship scheme","what is the amount of national scholarship","what is the payable amount for national scholarship","tell me the payable aamount for national scholarship","how much amount is payable for national scholarship","national scholarship payment","What is the maximum national scholarship amount that a student can receive","Is the national scholarship amount paid in installments or in a lump sum?"],
+"responses":["Scholarship amount includes tuition fees, living expenses and allowances for books and computer."]
+},
+  {"tag": "national scholarship benefits",
+  "patterns": ["what are the benefits of national scholarship scheme","what are the benefits of national scholarships", "tell me something about national scholarship benefits","national scholarship benefits"],
+  "responses": ["The main benefits of the scheme are as under: 1. Scholarship is given to 1000 fresh students every year, selected on merit based on marks of class XII. 2. The Scholarship is given for entire duration of the course pursued by the student. 3. Family income from all sources should not exceed Rs.6.00 lakhs per annum. 4. Scholarship amount includes tuition fees, living expenses and allowances for books and computer."]
+  },
+  {"tag": "national scholarship guidlines",
+  "patterns": ["what are the national scholarship guidelines", "what are the national scholarship scheme guidelines","tell me something about national scholarship guidelines","national scholarship guidelines"],
+  "responses": ["follow the below links 1. https:tribal.nic.indownloadsguidelinesTopClassGuidelinesFellowshipandScholarship2022.pdf 2. https:tribal.nic.indownloadsguidelinesTopClassRevisedList252lnslitutesEligibleforScholarshipforTopClassfromFY202223.pdf"]
+  },
+  {"tag": "national scholarship circular",
+  "patterns": ["what are the national scholarship circulars", "what are the national scholarship scheme circulars","tell me something about national scholarship circular","national scholarship circular","what are recent circulars about national scholarship scheme ","what are the new circulars published about national scholarship scheme","tell me about recent circulars about national scholarship scheme ","tell me about new circulars published about national scholarship scheme"],
+  "responses": ["follow the below links 1.https:tribal.nic.indownloadscircularsAadhar%20Notification%20for%208%20schemes%209.6.pdf 2. https:tribal.nic.indownloadscircularsCircular%20for%20Aadhar%20enrollment%2004102017.pdf"]
+  },
+  {"tag": "national scholarship amount",
+  "patterns": ["What is the total amount released in National Scholarship scheme?", "What is the total amount given in National Scholarship?", "Tell me the total amount released in National Scholarship scheme."],
+  "responses": ["Amount released in National Scholarship scheme is 34.47 Crore."]
+  },
+  {"tag": "national scholarship beneficiaries",
+  "patterns": ["What is the total number of beneficiaries in National Scholarship scheme?", "How many students are in National Scholarship scheme?", "What is the total number of beneficiaries in National Scholarship?" , "Tell me the total number of beneficiaries in National Scholarship scheme?", "How many students get benefited in National Scholarship?"],
+  "responses": ["Total number of beneficiaries is 2828."]
+  },
+  {"tag": "national scholarship states",
+  "patterns": ["How many states received National Scholarship scheme?", "What is the total number of states in National Scholarship?", "Tell me the total number of states in National Scholarship scheme."],
+  "responses": ["This is national scholarship"]
+  },
+
+
+
+
+
+
+
+
+  {"tag": "national fellowship scheme",
+    "patterns": ["What is national fellowship scheme?", "Tell me something about national fellowship scheme?", "How is national fellowship scheme?", "National fellowship"],
+    "responses": ["This is a Central Sector Scheme fully funded and implemented by Central Govt for pursuing MPhil and PhD in following: \n 1. UniversitiesInstitutionsColleges included under section 2(f) 12(B) or 2(D) and 12(B) of UGC Act \n 2. Deemed to be Universities included under Section 3 of the UGC Act, 1956 and eligible to receive grantsinaid from UGC. \n 3. Universities Institutions Colleges funded by Central State Government. \n 4. Institutes of National Importance."]
+  },
+  {"tag":"national fellowship eligibility",
+  "patterns":["What is eligibility for national fellowship?","tell me the eligibility criteria for national fellowship scholarship","Who is eligible for national fellowships?","What is the age limit for national fellowships?","Are there any academic requirements for national fellowships?","Is there any income limit for national fellowship eligibility?"],
+  "responses":["1. Scholarship is provided to 750 fresh ST students every year each year for pursing M Phil and PhD selected on merit based on marks of Master Degree \n 2. Preference is given to girls, Divyangan and PVTGs."]
+  },
+  {"tag":"national fellowship selection",
+"patterns":["tell me the selection process for national fellowship","tell me the selection process for national fellowship scheme","what is the selection process for national fellowship scheme","can you tell me the selection process for national fellowship","can you tell me the selection process for national fellowship scheme","what is the selection procedure of national fellowship","what is the selecction procedure for national fellowship scheme","selection of national fellowship","how students are selected for national fellowship scheme","tell me the selection process of national fellowship","how can I avail the national fellowship","how can I get the national fellowship","to get the national fellowship what i have to do"],
+"responses":["First check eligibility for national fellowship. Selection process is based on merit and marks of master's degree. \n Note: Preference is given to girls, Divyang and PVTGs."]
+},
+{"tag":"national fellowship application",
+"patterns":["how can I apply for national fellowship","how can I apply for national fellowship scheme","what is the application process for national fellowship scheme","how to apply for for national fellowship scheme","how to apply for national fellowship scheme"],
+"responses":["Applications are invited through national scholarship portal only https:scholarships.gov.in"]
+},
+  {"tag":"national fellowship payment",
+"patterns":["What is the national fellowship amount for this academic year?","how much amount is paid in national fellowship scholarship","what is the amount of national fellowship scheme","what is the amount of national fellowship","what is the payable amount for national fellowship","tell me the payable aamount for national fellowship","how much amount is payable for national fellowship","national fellowship payment","What is the maximum national fellowship amount that a student can receive","Is the national fellowship amount paid in installments or in a lump sum?"],
+"responses":["Fellowship for M.Phil is provided  Rs. 25000 per month and for Ph.D  Rs.28000 per month."]
+},
+  {"tag": "national fellowship benefits",
+  "patterns": ["What are the benefits of national fellowship scheme?","what are the benefits of national fellowship scholarships", "Tell me something about national fellowship benefits?", "National fellowship benefits"],
+  "responses": ["The main benefits of the scheme are as under: 1. Fellowship is given to 1000 fresh students every year, selected on merit based on marks of class XII. 2. The Fellowship is given for the entire duration of the course pursued by the student. 3. Family income from all sources should not exceed Rs.6.00 lakhs per annum. 4. Fellowship amount includes tuition fees, living expenses, and allowances for books and computer."]
+  },
+  {"tag": "national fellowship guidelines",
+  "patterns": ["What are the national fellowship guidelines?", "What are the national fellowship scheme guidelines?", "Tell me something about national fellowship guidelines?", "National fellowship guidelines"],
+  "responses": ["Follow the below links 1. https:tribal.nic.indownloadsguidelinesNFSGuidelinesFellowshipandScholarship2022.pdf"]
+  },
+  {"tag": "national fellowship circular",
+  "patterns": ["What are the national fellowship circulars?", "What are the national fellowship scheme circulars?", "Tell me something about national fellowship circular?", "National fellowship circular", "What are recent circulars about national fellowship scheme?", "What are the new circulars published about national fellowship scheme?", "Tell me about recent circulars about national fellowship scheme?", "Tell me about new circulars published about national fellowship scheme?"],
+  "responses": ["Follow the below links 1. https:tribal.nic.indownloadscircularsAadhar%20Notification%20for%208%20schemes%209.6.pdf 2. https:tribal.nic.indownloadscircularsCircular%20for%20Aadhar%20enrollment%2004102017.pdf 3. https:tribal.nic.indownloadscircularsNFST%20advertisment2021.pdf 4. https:tribal.nic.indownloadscircularsNFSThikerelatedletter.pdf"]
+  },
+  {"tag": "national fellowship amount",
+  "patterns": ["What is the total amount released in National Fellowship scheme?", "What is the total amount given in National Fellowship?", "Tell me the total amount released in National Fellowship scheme."],
+  "responses": ["Amount released in National Fellowship scheme is 105.34 Crore."]
+  },
+  {"tag": "national fellowship beneficiaries",
+  "patterns": ["What is the total number of beneficiaries in National Fellowship scheme?", "How many students are in National Fellowship scheme?", "What is the total number of beneficiaries in National Fellowship?" , "Tell me the total number of beneficiaries in National Fellowship scheme?", "How many students get benefited in National Fellowship?"],
+  "responses": ["Total number of beneficiaries is 2866."]
+  },
+
+
+
+
+
+
+{"tag": "national overseas scheme",
+"patterns": ["What is national overseas scheme?", "Tell me something about national overseas scheme?", "How is national overseas scheme?", "National overseas"],
+"responses": ["The Scheme provides for financial assistance to selected ST students to pursue Post Graduation, PhD & PostDoctoral study abroad."]
+},
+{"tag":"national overseas eligibility",
+"patterns":["What is eligibility for national overseas scholarship?","tell me the eligibility criteria for national overseas scholarship","Who is eligible for national overseas scholarships?","What is the age limit for national overseas scholarships?","Are there any academic requirements for national overseas scholarships?","Is there any income limit for national overseas scholarship eligibility?"],
+"responses":["1. The Scheme provides for financial assistance to selected ST students to pursue bullshit Graduation, PhD & PostDoctoral study abroad. \n 2. Selection is based on Interview based merit list prepared by An Expert Committee. \n 3. Student is given 2 years to seek admission in a foreign University after selection in merit list.  \n 4. Parentalfamily income from all sources should not exceed Rs.6.00 lakhs per annum."]
+},
+{"tag":"national overseas selection",
+  "patterns":["tell me the selection process for national overseas scholarship","tell me the selection process for national overseas scholarship scheme","what is the selection process for national overseas scholarship scheme","can you tell me the selection process for national overseas scholarship","can you tell me the selection process for national overseas scholarship scheme","what is the selection procedure of national overseas scholarship","what is the selecction procedure for national overseas scheme","selection of national overseas scholarship","how students are selected for national overseas scholarship scheme","tell me the selection process of national overseas","how can I avail the national overseas scholarship","how can I get the national overseas scholarship","to get the national overseas scholarship what i have to do"],
+  "responses":["Selection is based on Interview based merit list prepared by An Expert Committee. For more details check eligibility for national overseas scheme"]
+},
+{"tag":"national overseas application",
+  "patterns":["how can I apply for national overseas scholarship","how can I apply for national overseas scholarship scheme","what is the application process for national overseas scholarship scheme","how to apply for for national overseas scheme","how to apply for national overseas scholarship scheme"],
+  "responses":["Applications are invited through national scholarship portal only https:scholarships.gov.in"]
+},
+{"tag":"national overseas payment",
+"patterns":["What is the national overseas scholarship amount for this academic year?","how much amount is paid in national overseas scholarship","what is the amount of national overseas scholarship scheme","what is the amount of national overseas scholarship","what is the payable amount for national overseas scholarship","tell me the payable aamount for national overseas scholarship","how much amount is payable for national overseas scholarship","national overseas scholarship payment","What is the maximum national overseas scholarship amount that a student can receive","Is the national overseas scholarship amount paid in installments or in a lump sum?"],
+"responses":["The Scholarship comprises of tuition fee, Annual Maintenance allowance of USD 15400, Contingency Charges of USD 1532, Poll Tax, Visa Fee, Medical Insurance, Cost of Air journey, Incidental Journey expenses."]
+},
+{"tag": "national overseas benefits",
+"patterns": ["What are the benefits of national overseas scheme?","what are the benefits of national overseas scholarships", "Tell me something about national overseas benefits?", "National overseas benefits"],
+"responses": ["The main benefits of the scheme are as under: 1. A total of 20 awards are given every year. Of these, 17 awards are for STs and 3 awards for students belonging to Particularly Vulnerable Tribal Groups (PVTGs). 2. Selection is based on Interview based merit list prepared by An Expert Committee. 3. Student is given 2 years to seek admission in a foreign University after selection in merit list. 4. Parentalfamily income from all sources should not exceed Rs.6.00 lakhs per annum. 5. The Scholarship comprises of tuition fee, Annual Maintenance allowance of USD 15400, Contingency Charges of USD 1532, Poll Tax, Visa Fee, Medical Insurance, Cost of Air journey, Incidental Journey expenses. 6. Scholarship is disbursed through Indian Missions abroad through the Ministry of External Affairs, who in turn is reimbursed by the Ministry."]
+},
+{"tag": "national overseas guidelines",
+"patterns": ["What are the national overseas guidelines?", "What are the national overseas scheme guidelines?", "Tell me something about national overseas guidelines?", "National overseas guidelines"],
+"responses": ["Follow the below links 1. https:tribal.nic.indownloadsguidelinesNOSRevisedGuidelinesNOS07102022.pdf"]
+},
+{"tag": "national overseas circular",
+"patterns": ["What are the national overseas circulars?", "What are the national overseas scheme circulars?", "Tell me something about national overseas circular?", "National overseas circular", "What are recent circulars about national overseas scheme?", "What are the new circulars published about national overseas scheme?", "Tell me about recent circulars about national overseas scheme?", "Tell me about new circulars published about national overseas scheme?"],
+"responses": ["Follow the below links 1. https:tribal.nic.indownloadscircularsNOSadvertisment%20english%20version202223.pdf 2. https:tribal.nic.indownloadscircularsAadhar%20Notification%20for%208%20schemes%209.6.pdf  3. https:tribal.nic.indownloadscircularsCircular%20for%20Aadhar%20enrollment%2004102017.pdf 4. https:tribal.nic.indownloadscircularsNOS%20Advertisement2021.pdf"]
+},
+{"tag": "national overseas amount",
+"patterns": ["What is the total amount released in National Overseas scheme?", "What is the total amount given in National Overseas?", "Tell me the total amount released in National Overseas scheme."],
+"responses": ["Amount released in National Overseas scheme is 2.18 Crore."]
+},
+{"tag": "national overseas beneficiaries",
+"patterns": ["What is the total number of beneficiaries in National Overseas scheme?", "How many students are in National Overseas scheme?", "What is the total number of beneficiaries in National Overseas?" , "Tell me the total number of beneficiaries in National Overseas scheme?", "How many students get benefited in National Overseas?"],
+"responses": ["Total number of beneficiaries is 27."]
+},
+
+
+
+
+
+
+{
+  "tag": "faq1",
+  "patterns": ["What is the purpose of scholarships","tell me the purpose of scholarship"],
+  "responses": ["The purpose of scholarships for tribal students in India is to provide financial assistance to the students from economically weaker sections of the society who belong to Scheduled Tribes and are pursuing their education."]
+},
+{
+  "tag": "faq2",
+  "patterns": ["Who is eligible for scholarships"],
+  "responses": ["Students from Scheduled Tribes who are pursuing their education from class 1 to postgraduate level are eligible for scholarships for tribal students in India."]
+},
+{
+  "tag": "faq5",
+  "patterns": ["What documents are required to apply for scholarships","documents required for applying for the scholarships","list of documents required for applying scholarships"],
+  "responses": ["The documents required to apply for scholarships for tribal students in India include caste certificate, income certificate, mark sheets, bank account details, and Aadhaar card."]
+},
+{
+  "tag": "faq6",
+  "patterns": ["What is the deadline to apply for scholarships","tell me the deadline of scholarships","when is the deadline of scholarships"],
+  "responses": ["The deadline to apply for scholarships for tribal students in India varies for different scholarship schemes and states. It is advisable to check the official website for the latest information."]
+},
+{
+  "tag": "faq8",
+  "patterns": ["How much scholarship amount is provided under scholarships","how mucch scholarship is paid "],
+  "responses": ["The scholarship amount provided under scholarships for tribal students in India varies for different scholarship schemes and states. It can range from a few hundred rupees to several thousand rupees per month. \n check payable amount for individual scholarships"]
+},
+{
+  "tag": "faq9",
+  "patterns": ["How is the scholarship amount disbursed to the students?","how much scholarship amount disbured to the students"],
+  "responses": ["The scholarship amount is disbursed to the students through their bank accounts or through a cheque."]
+},
+{
+  "tag": "faq10",
+  "patterns": ["Can I apply for more than one scholarship","Can I apply for more than one scholarship","Can I apply for two scholarship"],
+  "responses": ["Yes, students can apply for more than one scholarship for tribal students in India if they meet the eligibility criteria for the respective scholarship schemes."]
+},
+{
+  "tag": "faq11",
+  "patterns": ["How to renew a scholarship","give me the process for renewing a scholarship","how can i renew my scholarships"],
+  "responses": ["Scholarships for tribal students in India can be renewed by submitting the necessary documents and fulfilling the renewal criteria set by the respective scholarship scheme."]
+},
+{
+  "tag": "faq12",
+  "patterns": ["What is the income criteria for availing scholarships","is there any income criteria for scholarships","what should be the income condition for getting scholarships"],
+  "responses": ["The income criteria for availing scholarships for tribal students in India varies for different scholarship schemes and states. However, in most cases, the annual family income should not exceed a certain amount, usually around Rs. 2.5 to 4.5 lakhs. \nFor details, check eligibility for each scholarships"]
+},
+{
+  "tag": "faq13",
+  "patterns": ["Is the income criteria different for different scholarship schemes?"],
+  "responses": ["Yes, the income criteria may differ for different scholarship schemes for tribal students in India. It is advisable to check the eligibility criteria for each scholarship scheme separately."]
+},
+{
+  "tag": "faq14",
+  "patterns": ["What if my family income exceeds the income criteria for availing scholarships","what will happen if family income exceeds the income criteria for availing scholarships"],
+  "responses": ["If your family income exceeds the income criteria for availing scholarships for tribal students in India, you may not be eligible for certain scholarship schemes. However, you may still be eligible for other scholarship schemes, and it is advisable to check the eligibility criteria for each scholarship scheme separately."]
+},
+{
+  "tag": "faq15",
+  "patterns": ["How is the family income calculated for availing scholarships","how family income is calculated to avail scholarships"],
+  "responses": ["The family income is calculated by adding the income of all the earning members of the family, including parents and siblings, and subtracting any taxes and other deductions."]
+},
+{
+  "tag": "faq16",
+  "patterns": ["What documents are required to verify the income for availing scholarships","give me list of documents required for availing scholarships"],
+  "responses": ["The documents required to verify the income for availing scholarships for tribal students in India include income certificate, salary slips, tax returns, and any other relevant documents."]
+},
+{
+  "tag": "faq18",
+  "patterns": ["What is the last date for submitting scholarship applications"],
+  "responses": ["The last date for submitting scholarship applications for tribal students in India varies for different scholarship schemes and states. It is advisable to check the deadline for each scholarship scheme separately."]
+},
+{
+  "tag": "faq19",
+  "patterns": ["What are the documents required for applying for a scholarship","give me the list of documents required for applying for the scholarship"],
+  "responses": ["The documents required for applying for a scholarship for tribal students in India include caste certificate, income certificate, mark sheet of the previous qualifying exam, and any other relevant documents."]
+},
+{
+  "tag": "faq21",
+  "patterns": ["How are the scholarship amounts disbursed to the selected tribal students in India?"],
+  "responses": ["The scholarship amounts are disbursed directly to the bank accounts of the selected tribal students in India through Direct Benefit Transfer (DBT)."]
+},
+{
+  "tag": "faq22",
+  "patterns": ["What is the duration of the scholarships"],
+  "responses": ["The duration of the scholarships for tribal students in India varies for different scholarship schemes. Some scholarships are awarded for a period of one year, while others may be awarded for the entire duration of the course."]
+},
+{
+  "tag": "faq23",
+  "patterns": ["Can I renew my scholarship"],
+  "responses": ["Yes, you can renew your scholarship for tribal students in India, provided you meet the eligibility criteria and the renewal conditions specified for each scholarship scheme."]
+},
+{
+  "tag": "faq24",
+  "patterns": ["What happens if I fail in my exams while availing a scholarship"],
+  "responses": ["If you fail in your exams while availing a scholarship for tribal students in India, your scholarship may be discontinued or suspended, depending on the scholarship scheme and the renewal conditions."]
+},
+{
+  "tag": "faq25",
+  "patterns": ["Can I transfer my scholarship for tribal students in India from one college to another?"],
+  "responses": ["No, you cannot transfer your scholarship for tribal students in India from one college to another, unless specified otherwise by the scholarship scheme."]
+},
+{
+  "tag": "faq26",
+  "patterns": ["How can I check the status of my scholarship application"],
+  "responses": ["You can check the status of your scholarship application for tribal students in India online through the National Scholarship Portal (NSP) or the scholarship portal of the respective state or central agency."]
+},
+
+{
+  "tag": "faq27",
+  "patterns": ["What should I do if I encounter technical issues while applying for a scholarship"],
+  "responses": ["If you encounter technical issues while applying then contact us at https:tribal.nic.inContactUs.aspx"]
+},
+{
+  "tag": "faq29",
+  "patterns": ["How can I apply for a pre matric scholarship"],
+  "responses": ["You can apply for a prematric scholarship for OBC students in India online through the National Scholarship Portal (NSP)."]
+},
+{
+  "tag": "faq30",
+  "patterns": ["What is the last date for submitting scholarship applications for pre matric scholarships"],
+  "responses": ["The last date for submitting scholarship applications for prematric scholarships for OBC students in India varies for different states and scholarship schemes. It is advisable to check the deadline for each scholarship scheme separately."]
+},
+{
+  "tag": "faq31",
+  "patterns": ["What are the documents required for applying for a pre matric scholarship"],
+  "responses": ["The documents required for applying for a prematric scholarship for OBC students in India include caste certificate, income certificate, mark sheet of the previous qualifying exam, and any other relevant documents."]
+},
+{
+  "tag": "faq32",
+  "patterns": ["Can I apply for more than one pre matric scholarship"],
+  "responses": ["No, you cannot apply for more than one prematric scholarship for OBC students in India."]
+},
+{
+  "tag": "faq33",
+  "patterns": ["What is the scholarship amount for pre matric scholarships"],
+  "responses": ["The scholarship amount for prematric scholarships for OBC students in India varies for different scholarship schemes and states. It covers expenses such as tuition fee, maintenance allowance, and other allowances."]
+},
+{
+  "tag": "faq34",
+  "patterns": ["Is there any preference given to female students while awarding pre matric scholarships","which scholarships give preference to female students"],
+  "responses": ["No, there is no preference given to female students while awarding prematric scholarships for OBC students in India. The scholarships are awarded purely based on merit and financial need."]
+},
+{
+  "tag": "faq36",
+  "patterns": ["How are the scholarship amounts disbursed to the selected OBC students in India?"],
+  "responses": ["The scholarship amounts are disbursed directly to the bank accounts of the selected OBC students in India through Direct Benefit Transfer (DBT)."]
+},
+{
+  "tag": "faq37",
+  "patterns": ["Can I renew my prematric scholarship"],
+  "responses": ["Yes, you can renew your pre matric scholarship"]
+},
+
+{
+  "tag": "faq38",
+  "patterns": ["Is there any preference given to female students while awarding scholarships in India?"],
+  "responses": ["In national fellowship,national scholarship girls are preferred first"]
+},
+{
+  "tag": "faq40",
+  "patterns": ["What is the official website of the Ministry of Tribal Affairs for scholarships in India?"],
+  "responses": ["The official website of the Ministry of Tribal Affairs for scholarships in India is https:tribal.nic.inScholarshiP.aspx."]
+},
+{
+  "tag": "faq43",
+  "patterns": ["What documents are required for applying for scholarships available"],
+  "responses": ["The documents required for applying for scholarships available include caste certificate, income certificate, mark sheet of the previous qualifying exam, and any other relevant documents."]
+},
+{
+  "tag": "faq44",
+  "patterns": ["What is the last date for submitting scholarship applications"],
+  "responses": ["The last date for submitting scholarship applications varies for different scholarship schemes and states. It is advisable to check the deadline for each scholarship scheme separately."]
+},
+{
+  "tag": "faq45",
+  "patterns": ["Is it mandatory to have an Aadhaar card for applying for scholarships"],
+  "responses": ["Yes, it is mandatory to have an Aadhaar card for applying for scholarships"]
+},
+{
+  "tag": "faq47",
+  "patterns": ["Is there any fee for applying for scholarships"],
+  "responses": ["No, there is no fee for applying for scholarships"]
+},
+
+
+
+
+
+
+  {"tag": "help",
+  "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+  "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+  }
+]
+}
