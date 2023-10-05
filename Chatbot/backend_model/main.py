@@ -1,3 +1,4 @@
+from nltk.tokenize import word_tokenize
 import fastapi
 from fastapi import FastAPI
 import os
@@ -17,7 +18,8 @@ import pickle
 from transformers import GPT2Tokenizer
 from transformers import DistilBertTokenizer, TFDistilBertForQuestionAnswering
 import tensorflow as tf
-
+import nltk
+nltk.download('punkt')  # Download the NLTK data (if not already downloaded)
 
 service_account_key_path = "D:\MoTA-Chatbot\Chatbot\Backend_model\chatbot-294f4-firebase-adminsdk-af7lw-74f7fd62e5.json"
 
@@ -34,22 +36,18 @@ tokenizer = DistilBertTokenizer.from_pretrained(
 model = TFDistilBertForQuestionAnswering.from_pretrained(
     "distilbert-base-cased-distilled-squad")
 file_path = "D:\MoTA-Chatbot\Chatbot\Backend_model\data.txt"
-context = "This is a Centrally Sponsored Scheme implemented through States/UTs who are responsible for Inviting applications from students online through State Portal or National Scholarship Portal, check eligibility verification and disbursement of scholarship to eligible ST students directly to their bank accounts through DBT. Funds are released by this Ministry to the State Governments/UTs based on their proposal comprising of Statement of Expenditure, Furnishing of Utilization Certificate and Uploading of beneficiary data on DBT Portal. The main features of the scheme are as under:Applicable to students who are studying in Classes IX – X.Parental income from all sources should not exceed Rs.2.50 lakhs per annum.Scholarships are paid @ Rs.225/- per month for Day Scholars and @ Rs.525/- per month for Hostellers, for a period of 10 months in a year.Funds shared at the ratio of 75:25 between the Centre and State Governments/UT and in ratio of 90:10 for NE and Specially Category States/UTs (UT of Jammu & Kashmir, Himachal Pradesh and Uttarakhand). For UT without legislature 100% grant is given by Centre."
-# context = ""
-# try:
-#     with open(file_path, "r", encoding="utf-8") as file:
-#         context = file.read()
-# except FileNotFoundError:
-#     print("The specified file does not exist.")
-# except Exception as e:
-#     print(f"An error occurred: {str(e)}")
-
-
-# model_directory = "D:\MoTA-Chatbot\Chatbot\Backend_model\model.h5"
-# tokenizer_directory = "D:\MoTA-Chatbot\Chatbot\Backend_model"
-
-# tokenizer = GPT2Tokenizer.from_pretrained(tokenizer_directory)
-# model = keras.models.load_model(model_directory)
+context = ""
+try:
+    with open(file_path, "r", encoding="utf-8") as file:
+        context = file.read()
+except FileNotFoundError:
+    print("The specified file does not exist.")
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
+tokens = word_tokenize(context)
+context = ""
+for token in tokens:
+    context = context+token+" "
 
 # origins = [
 #     "http://localhost.tiangolo.com",
