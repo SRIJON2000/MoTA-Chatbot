@@ -1,4 +1,5 @@
-from nltk.tokenize import word_tokenize
+# from nltk.tokenize import word_tokenize
+import requests
 import fastapi
 from fastapi import FastAPI
 import os
@@ -15,11 +16,12 @@ from tensorflow import keras
 # from sklearn.preprocessing import LabelEncoder
 import random
 import pickle
-from transformers import GPT2Tokenizer
+# from transformers import GPT2Tokenizer
 from transformers import DistilBertTokenizer, TFDistilBertForQuestionAnswering
 import tensorflow as tf
-import nltk
-nltk.download('punkt')  # Download the NLTK data (if not already downloaded)
+from bs4 import BeautifulSoup
+# import nltk
+# #nltk.download('punkt')  # Download the NLTK data (if not already downloaded)
 
 service_account_key_path = "D:\MoTA-Chatbot\Chatbot\Backend_model\chatbot-294f4-firebase-adminsdk-af7lw-74f7fd62e5.json"
 
@@ -31,23 +33,23 @@ db = firestore.Client(credentials=credentials)
 
 app = FastAPI(debug=True)
 
-tokenizer = DistilBertTokenizer.from_pretrained(
-    "distilbert-base-cased-distilled-squad")
-model = TFDistilBertForQuestionAnswering.from_pretrained(
-    "distilbert-base-cased-distilled-squad")
-file_path = "D:\MoTA-Chatbot\Chatbot\Backend_model\data.txt"
-context = ""
-try:
-    with open(file_path, "r", encoding="utf-8") as file:
-        context = file.read()
-except FileNotFoundError:
-    print("The specified file does not exist.")
-except Exception as e:
-    print(f"An error occurred: {str(e)}")
-tokens = word_tokenize(context)
-context = ""
-for token in tokens:
-    context = context+token+" "
+# tokenizer = DistilBertTokenizer.from_pretrained(
+#     "distilbert-base-cased-distilled-squad")
+# model = TFDistilBertForQuestionAnswering.from_pretrained(
+#     "distilbert-base-cased-distilled-squad")
+# file_path = "D:\MoTA-Chatbot\Chatbot\Backend_model\data.txt"
+# context = ""
+# try:
+#     with open(file_path, "r", encoding="utf-8") as file:
+#         context = file.read()
+# except FileNotFoundError:
+#     print("The specified file does not exist.")
+# except Exception as e:
+#     print(f"An error occurred: {str(e)}")
+# tokens = word_tokenize(context)
+# context = ""
+# for token in tokens:
+    # context = context+token+" "
 
 # origins = [
 #     "http://localhost.tiangolo.com",
@@ -68,16 +70,58 @@ app.add_middleware(
 )
 
 
+# @app.get("/get/{input}")
+# async def response(input: str):
+#     inputs = tokenizer(input, context, return_tensors="tf")
+#     outputs =model(**inputs)
+#     answer_start_index = int(tf.math.argmax(outputs.start_logits, axis=-1)[0])
+#     answer_end_index = int(tf.math.argmax(outputs.end_logits, axis=-1)[0])
+
+#     predict_answer_tokens = inputs.input_ids[0,
+#                                              answer_start_index: answer_end_index + 1]
+#     return str(tokenizer.decode(predict_answer_tokens))
+API_URL = "https://api-inference.huggingface.co/models/distilbert-base-cased-distilled-squad"
+headers = {"Authorization": "Bearer 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"}
+
+async def scrape_context(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.text, 'html.parser')
+        # Modify this part based on the actual HTML structure of the page
+        context_elements = soup.select('your_selector_here')
+        context = ' '.join([element.get_text() for element in context_elements])
+        return context
+    else:
+        return None
+
 @app.get("/get/{input}")
 async def response(input: str):
-    inputs = tokenizer(input, context, return_tensors="tf")
-    outputs = model(**inputs)
-    answer_start_index = int(tf.math.argmax(outputs.start_logits, axis=-1)[0])
-    answer_end_index = int(tf.math.argmax(outputs.end_logits, axis=-1)[0])
-
-    predict_answer_tokens = inputs.input_ids[0,
-                                             answer_start_index: answer_end_index + 1]
-    return str(tokenizer.decode(predict_answer_tokens))
+    
+    # payload={
+	# "inputs": {
+	# 	"question": input,
+	# 	"context": context,
+	#     },
+    # }
+    # #print(payload["inputs"]["context"])
+    # response = requests.post(API_URL, headers=headers, json=payload)
+    # return response.json()["answer"]
+    url_to_scrape = "https://tribal.nic.in/ScholarshiP.aspx"
+    
+    # Scrape the context from the URL
+    context = await scrape_context(url_to_scrape)
+    print(context)
+    if context is not None:
+        payload = {
+            "inputs": {
+                "question": input,
+                "context": context,
+            },
+        }
+        response = requests.post(API_URL, headers=headers, json=payload)
+        return response.json()["answer"]
+    else:
+        return {"error": "Failed to scrape context"}
 
 
 @app.put("/add/{question}/{answer}/{conid}")
